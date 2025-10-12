@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://progressivejournal.github.io/sitemap.xml
