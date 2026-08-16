@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auditing Frame-Level AUC in Weakly Supervised Video Anomaly Detection: Granularity, Resolution, and Scene Bias | Progressive Journal</title>
+
+  <!-- Google Scholar Metadata -->
+  <meta
+    name="citation_title"
+    content="Auditing Frame-Level AUC in Weakly Supervised Video Anomaly Detection: Granularity, Resolution, and Scene Bias"
+  />
+  <meta name="citation_author" content="Sara Abdulaziz" />
+  <meta name="citation_author" content="Egor Bondarev" />
+  <meta name="citation_publication_date" content="2026/08/12" />
+  <meta name="citation_online_date" content="2026/08/12" />
+  <meta name="citation_arxiv_id" content="2608.11985" />
+  <meta
+    name="citation_pdf_url"
+    content="https://progressivejournal.github.io/publications/auditing-frame-level-auc.pdf"
+  />
+
+  <meta
+    name="description"
+    content="Auditing Frame-Level AUC in Weakly Supervised Video Anomaly Detection: Granularity, Resolution, and Scene Bias — an evaluation study examining whether pooled frame-level AUC reliably measures anomaly localization and supports model ranking in weakly supervised video anomaly detection."
+  />
+
+  <style>
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+      color: #111827;
+    }
+
+    header p {
+      color: #4b5563;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    header .authors {
+      color: #374151;
+      font-size: 1rem;
+      margin: 0.25rem 0 0.35rem;
+      font-weight: 500;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    a.download {
+      display: inline-block;
+      background-color: #2563eb;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.2s;
+    }
+
+    a.download:hover {
+      background-color: #1e40af;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      Auditing Frame-Level AUC in Weakly Supervised Video Anomaly Detection:
+      Granularity, Resolution, and Scene Bias
+    </h1>
+
+    <p class="authors">Sara Abdulaziz and Egor Bondarev</p>
+    <p>Preprint · 2026</p>
+  </header>
+
+  <main>
+    <p>
+      This paper audits the standard <strong>frame-level AUC evaluation protocol</strong>
+      used in weakly supervised video anomaly detection. Using UCF-Crime and a
+      diverse set of recent WSVAD models, the study evaluates the same model
+      predictions at three granularities: global, per anomaly category, and
+      within-video.
+    </p>
+
+    <p>
+      The analysis shows that pooled AUC does not reliably reflect within-video
+      anomaly localization and often lacks the statistical resolution needed to
+      distinguish models at the small margins commonly reported as
+      state-of-the-art improvements. A paired video bootstrap is used to assess
+      whether model rankings are statistically resolvable.
+    </p>
+
+    <p>
+      The paper further audits <strong>scene reliance</strong> using normal footage
+      and scene-factor annotations for UCF-Crime. The results show that the
+      examined models respond systematically to recording and semantic
+      properties such as spatial resolution, color encoding, and location,
+      highlighting the role of scene bias in current WSVAD evaluation.
+    </p>
+
+    <p>
+      <a
+        class="download"
+        href="auditing-frame-level-auc.pdf"
+        target="_blank"
+      >
+        📄 Download PDF
+      </a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Progressive Journal. All rights reserved.</p>
+  </footer>
+</body>
+</html>
