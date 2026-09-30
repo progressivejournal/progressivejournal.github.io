@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Look Inside Each Video: Rethinking How Video Anomaly Detection Is Evaluated | Progressive Journal</title>
+
+  <!-- Google Scholar Metadata -->
+  <meta
+    name="citation_title"
+    content="Look Inside Each Video: Rethinking How Video Anomaly Detection Is Evaluated"
+  />
+  <meta name="citation_author" content="Inpyo Song" />
+  <meta name="citation_author" content="Jangwon Lee" />
+  <meta name="citation_publication_date" content="2026/09/29" />
+  <meta name="citation_online_date" content="2026/09/29" />
+  <meta
+    name="citation_pdf_url"
+    content="https://progressivejournal.github.io/publications/lookinside.pdf"
+  />
+
+  <meta
+    name="description"
+    content="Look Inside Each Video: Rethinking How Video Anomaly Detection Is Evaluated — an evaluation study showing that pooled frame-level Micro-AUROC in video anomaly detection is dominated by cross-video comparisons and does not necessarily measure temporal anomaly localization within individual videos."
+  />
+
+  <style>
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+      color: #111827;
+    }
+
+    header p {
+      color: #4b5563;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    header .authors {
+      color: #374151;
+      font-size: 1rem;
+      margin: 0.25rem 0 0.35rem;
+      font-weight: 500;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    a.download {
+      display: inline-block;
+      background-color: #2563eb;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.2s;
+    }
+
+    a.download:hover {
+      background-color: #1e40af;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      Look Inside Each Video: Rethinking How Video Anomaly Detection Is Evaluated
+    </h1>
+
+    <p class="authors">Inpyo Song and Jangwon Lee</p>
+    <p>SungKyunKwan University · South Korea</p>
+  </header>
+
+  <main>
+    <p>
+      This paper reexamines the standard <strong>pooled frame-level Micro-AUROC
+      evaluation protocol</strong> used in video anomaly detection. Micro-AUROC pools
+      anomaly scores from all test videos, creating comparisons both between frames
+      from the same video and between frames from different videos. The paper argues
+      that these two types of comparisons measure fundamentally different aspects of
+      detector behavior.
+    </p>
+
+    <p>
+      By decomposing Micro-AUROC into <strong>within-video</strong> and
+      <strong>cross-video</strong> comparisons, the study shows that within-video
+      anomalous-normal frame pairs constitute only <strong>0.071–0.388%</strong> of
+      all evaluated pairs across four widely used weakly supervised VAD benchmarks.
+      Consequently, pooled Micro-AUROC is overwhelmingly determined by cross-video
+      comparisons rather than by whether a detector correctly ranks anomalous frames
+      above normal frames within the same video.
+    </p>
+
+    <p>
+      The experiments demonstrate this distinction directly. Video-level classifiers
+      that assign a single score to every frame of a video achieve
+      <strong>81.40–97.18% Micro-AUROC</strong> despite obtaining exactly
+      <strong>50% Within-AUROC</strong>. Similarly, replacing the frame scores of
+      existing weakly supervised VAD detectors with each video's mean score removes
+      within-video temporal ranking while retaining a median
+      <strong>98.8% of the original Micro-AUROC margin above chance</strong>
+      across 120 runs.
+    </p>
+
+    <p>
+      These results show that high pooled Micro-AUROC alone does not establish
+      successful <strong>temporal anomaly localization</strong>. Because the issue
+      arises from the evaluation protocol rather than the form of training
+      supervision, the distinction applies broadly whenever frame-level VAD scores
+      are pooled across multiple videos. The paper therefore motivates reporting
+      <strong>within-video ranking metrics alongside Micro-AUROC</strong>.
+    </p>
+
+    <p>
+      <a
+        class="download"
+        href="lookinside.pdf"
+        target="_blank"
+      >
+        📄 Download PDF
+      </a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Progressive Journal. All rights reserved.</p>
+  </footer>
+</body>
+</html>
